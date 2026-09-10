@@ -1,0 +1,3 @@
+CREATE TABLE IF NOT EXISTS checkout_payments (id uuid PRIMARY KEY, attempt_key text UNIQUE NOT NULL, stripe_checkout_session_id text UNIQUE, stripe_payment_intent_id text UNIQUE, shopify_order_id text UNIQUE, status text NOT NULL, currency text NOT NULL, amount bigint NOT NULL DEFAULT 0, customer_email text, items jsonb NOT NULL, last_error text, created_at timestamptz NOT NULL DEFAULT now(), updated_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS webhook_events (stripe_event_id text PRIMARY KEY, type text NOT NULL, created_at timestamptz NOT NULL DEFAULT now());
+CREATE TABLE IF NOT EXISTS api_rate_limits (key text NOT NULL, bucket timestamptz NOT NULL, count integer NOT NULL, PRIMARY KEY(key,bucket));

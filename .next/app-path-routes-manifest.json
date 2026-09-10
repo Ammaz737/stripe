@@ -1,0 +1,11 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/api/admin/reconcile/route": "/api/admin/reconcile",
+  "/api/checkout-status/route": "/api/checkout-status",
+  "/api/stripe/create-checkout-session/route": "/api/stripe/create-checkout-session",
+  "/api/stripe/webhook/route": "/api/stripe/webhook",
+  "/checkout/cancel/page": "/checkout/cancel",
+  "/checkout/success/page": "/checkout/success",
+  "/page": "/"
+}

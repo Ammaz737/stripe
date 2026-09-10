@@ -1,0 +1,3 @@
+module.exports=[60120,a=>{"use strict";var b=a.i(87924),c=a.i(72131);a.s(["default",0,function(){let[a,d]=(0,c.useState)("confirming");return(0,c.useEffect)(()=>{let a=new URLSearchParams(window.location.search).get("session_id");if(!a)return;let b=()=>fetch(`/api/checkout-status?session_id=${encodeURIComponent(a)}`).then(a=>a.json()).then(a=>d(a.status));b();let c=setInterval(b,2e3);return()=>clearInterval(c)},[]),(0,b.jsxs)("main",{children:[(0,b.jsx)("h1",{children:"order_created"===a?"Order confirmed":"Payment received"}),(0,b.jsx)("p",{children:"order_created"===a?"Your Shopify order has been created.":"We are confirming your order."})]})}])}];
+
+//# sourceMappingURL=app_checkout_success_page_tsx_0nlgio9._.js.map
