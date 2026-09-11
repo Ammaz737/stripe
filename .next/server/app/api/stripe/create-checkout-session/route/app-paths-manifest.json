@@ -1,3 +1,0 @@
-{
-  "/api/stripe/create-checkout-session/route": "app/api/stripe/create-checkout-session/route.js"
-}
